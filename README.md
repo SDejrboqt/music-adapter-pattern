@@ -7,21 +7,28 @@ This project demonstrates the Adapter Design Pattern by unifying different music
 Different instruments have different methods: `startElectric()`, `playSound()`, `blow()`, `hit()`. The Adapter Pattern converts each of these to a common `play()` method.
 
 ## How to Run
-1. Open terminal in the `src` folder.
-2. Compile: `javac Main.java`
-3. Run: `java Main`
+Open terminal in the `src` folder.
+- Compile: `javac Main.java`
+- Run: `java Main`
 
 ## Expected Output
-=== Music Band using Adapter Pattern ===
 
-Guitar: power on.
-Guitar: strumming sound 
+## Project Deliverables (Required by Instructor)
+
+| Deliverable | Location |
+|-------------|----------|
+| Problem Analysis & Trade-offs | [`reports/Problem_Analysis_Tradeoffs.md`](reports/Problem_Analysis_Tradeoffs.md) |
+| Pattern Selection & Justification | [`reports/Pattern_Selection_Justification.md`](reports/Pattern_Selection_Justification.md) |
+| UML Diagram | [`reports/UML_Diagram.png`](reports/UML_Diagram.png) |
+| Contribution Log | [`CONTRIBUTION_LOG.md`](CONTRIBUTION_LOG.md) |
+| GitHub Project Board Link | [`GITHUB_BOARD_LINK.txt`](GITHUB_BOARD_LINK.txt) |
+| Presentation Slides | [`presentation/Adapter_Pattern_Presentation.pdf`](presentation/Adapter_Pattern_Presentation.pdf) |
+
+## Source Code Structure
+- `src/Main.java` – Entry point
+- `src/Playable.java` – Target interface with `play()`
+- `src/adaptees/` – Original instrument classes (Guitar, Piano, Flute, Drum)
+- `src/adapters/` – Adapter classes implementing `Playable`
+
 ---
-Piano: power on.
-Piano: beautiful melody 
----
-Flute: blowing air 
-Flute: clear tone 
----
-Drum: hit the drum 
----
+**Note:** Each team member contributed via GitHub. Commit history and project board are accessible through the links above.
